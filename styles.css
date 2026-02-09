@@ -752,9 +752,6 @@ img  {
 .appointment-section-2  {
   background-color:var(--text-bg);
 }
-.appointment-section-4  {
-  background-color:var(--text-bg);
-}
 .appointment-benefits  {
   display:flex; flex-direction:column; align-items:center; margin-top:1rem;
 }
