@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# Редіректи зі старих посилань на нові (301 - постійний редірект для SEO)
+RewriteRule ^about\.html$ / [R=301,L]
+RewriteRule ^about$ / [R=301,L]
+RewriteRule ^milkladder\.html$ /molochna-drabyna.html [R=301,L]
+RewriteRule ^milkladder$ /molochna-drabyna.html [R=301,L]
+RewriteRule ^payment_rules\.html$ /appointment.html [R=301,L]
+RewriteRule ^payment_rules$ /appointment.html [R=301,L]
+RewriteRule ^privacy_policy\.html$ /privacy-policy.html [R=301,L]
+RewriteRule ^privacy_policy$ /privacy-policy.html [R=301,L]
+RewriteRule ^user_agreement\.html$ /terms-of-use.html [R=301,L]
+RewriteRule ^user_agreement$ /terms-of-use.html [R=301,L]
+
+# Приховує index.html
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Дозволяє заходити без .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

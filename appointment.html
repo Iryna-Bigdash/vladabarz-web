@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Запис на онлайн консультацію до Dra. Vlada Barzylovych - педіатра та алерголога"
+    />
+    <title>Запис на прийом | Dra. Vlada Barzylovych</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/">
+              <img src="assets/images/logo.svg" alt="Dra. Vlada Barzylovych" class="logo-img" width="200" height="50">
+            </a>
+          </div>
+          <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li>
+                <a href="index.html#about" class="nav-link" data-i18n="nav.about"
+                  >Про мене</a
+                >
+              </li>
+              <li>
+                <a href="molochna-drabyna.html" class="nav-link" data-i18n="nav.services"
+                  >Молочна драбина</a
+                >
+              </li>
+              <li>
+                <a
+                  href="appointment.html"
+                  class="nav-link"
+                  data-i18n="nav.appointment"
+                  >Запис на прийом</a
+                >
+              </li>
+              <li>
+                <a href="index.html#contact" class="nav-link" data-i18n="nav.contact"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+          </div>
+          <button id="burgerMenu" class="burger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section 1: Services -->
+      <section class="section appointment-section appointment-section-1">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title is-hidden" data-i18n="appointment.section1.title">Послуги консультації</h2>
+          </div>
+          <!-- Services for Portugal section -->
+          <div class="appointment-benefits">
+            <h2 class="appointment-benefits-title" data-i18n="appointment.services.title">
+              Для тих, хто в Португалії:
+            </h2>
+            <p class="appointment-services-intro" data-i18n="appointment.services.intro">
+              Як лікар загальної практики буду рада проконсультувати вас щодо:
+            </p>
+            <ul class="list appointment-benefits-list">
+              <li class="appointment-benefit-item">
+                <div class="benefit-icon">
+                  <img src="assets/images/icons/medical-consultation.svg" alt="Medical consultation icon" width="48" height="48" loading="lazy" />
+                </div>
+                <p class="benefit-text" data-i18n="appointment.services.item1">
+                  Планових та гострих НЕ ургентних станів у дітей
+                </p>
+              </li>
+              <li class="appointment-benefit-item">
+                <div class="benefit-icon">
+                  <img src="assets/images/icons/follow-up-consultation.svg" alt="Follow-up consultation icon" width="48" height="48" loading="lazy" />
+                </div>
+                <p class="benefit-text" data-i18n="appointment.services.item2">
+                  Планових консультацій щодо загального стану здоров'я дорослих (наприклад направлення на аналізи, дообстеження щодо алергій, подовження рецепту на хронічні ліки і т.п.)
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services for Another countries section -->
+          <div class="appointment-benefits">
+            <h2 class="appointment-benefits-title" data-i18n="appointment.services.other.title">
+              Для тих, хто в будь-якій іншій країні окрім Португалії та України
+            </h2>
+            <ul class="list appointment-benefits-list">
+              <li class="appointment-benefit-item">
+                <div class="benefit-icon">
+                  <img src="assets/images/icons/medical-consultation.svg" alt="Medical consultation icon" width="48" height="48" loading="lazy" />
+                </div>
+                <p class="benefit-text" data-i18n="appointment.services.other.description">
+                  Додається можливість отримання заключення англійською мовою з печаткою європейського лікаря, якщо це необхідно
+                </p>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- What consultation includes -->
+          <div class="appointment-benefits appointment-benefits-secondary">
+            <h2 class="appointment-benefits-title" data-i18n="appointment.benefits.title">
+              Консультація включає у себе:
+            </h2>
+            <ul class="list appointment-benefits-list">
+              <li class="appointment-benefit-item">
+                <div class="benefit-icon">
+                  <img src="assets/images/icons/child-care-recommendations.svg" alt="Medical consultation icon" width="48" height="48" loading="lazy" />
+                </div>
+                <p class="benefit-text" data-i18n="appointment.benefits.item1">
+                  Розбір клінічного випадку з наданням усіх необхідних рекомендацій
+                </p>
+              </li>
+              <li class="appointment-benefit-item">
+                <div class="benefit-icon">
+                  <img src="assets/images/icons/medical-consultation.svg " alt="Follow-up consultation icon" width="48" height="48" loading="lazy" />
+                </div>
+                <p class="benefit-text" data-i18n="appointment.benefits.item2">
+                  За потреби: заключення, рецепти на ліки, направлення на аналізи, довідку в школу/садочок
+                </p>
+              </li>
+              <li class="appointment-benefit-item">
+                <div class="benefit-icon">
+                  <img src="assets/images/icons/follow-up-consultation.svg" alt="Child care recommendations icon" width="48" height="48" loading="lazy" />
+                </div>
+                <p class="benefit-text" data-i18n="appointment.benefits.item3">
+                  В Португалії ви отримуєте фатуру, яку можете передати до своєї страхової компанії «на відшкодування». Сума відшкодування залежить від вашого пакету
+                </p>
+              </li>
+            </ul>
+            <p class="appointment-benefits-note" data-i18n="appointment.benefits.note">
+              Аналізи ви можете здати в будь-якій лабораторії за власний рахунок, часто вони покриваються страховою, перегляньте свій пакет. Направлення на «безкоштовні» аналізи видається державним сімейним лікарем чи вузьким спеціалістом на певний перелік аналізів його профілю.
+            </p> 
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Pricing -->
+      <section class="section appointment-section appointment-section-2">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title is-hidden" data-i18n="appointment.section2.title">Вартість</h2>
+          </div>
+          <!-- Pricing Section -->
+          <div class="appointment-pricing">
+            <h3 class="section-subtitle pricing-title" data-i18n="appointment.pricing.title">
+              Вартість консультації:
+            </h3>
+            
+            <!-- Online Consultation -->
+            <div class="pricing-category">
+              <p class="pricing-description" data-i18n="appointment.pricing.online.description">
+                Консультація відбувається у форматі діалогу у зручному для вас месенджері (Скайп, VIBER, WhatsApp, Telegram) в заздалегідь обумовлений час. За бажанням можливий також формат переписки (без зідзвону). Тривалість онлайн консультації - 40 хвилин.
+              </p>
+              <ul class="list pricing-list">
+                <li class="pricing-item">
+                  <span class="pricing-label" data-i18n="appointment.pricing.online.primary.label">Первинна онлайн консультація</span>
+                  <span class="pricing-value" data-i18n="appointment.pricing.online.primary.value">65 євро</span>
+                </li>
+                <li class="pricing-item">
+                  <span class="pricing-label" data-i18n="appointment.pricing.online.followup.label">Повторна онлайн консультація (для уточнення/контролю лікування протягом 14 днів після первинної консультації) - 20 хвилин</span>
+                  <span class="pricing-value" data-i18n="appointment.pricing.online.followup.value">35 євро</span>
+                </li>
+                <li class="pricing-item">
+                  <span class="pricing-label" data-i18n="appointment.pricing.abroad.label">Для тих, хто за кордоном в будь-якій іншій країні окрім Португалії та України і потребує заключення англійською мовою з печаткою європейського лікаря</span>
+                  <span class="pricing-value" data-i18n="appointment.pricing.abroad.value">Оплата в доларах або євро (еквівалент 65 євро)</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- In-person Consultation -->
+            <div class="pricing-category">
+              <h4 class="pricing-category-title" data-i18n="appointment.pricing.inperson.title">
+                Очна консультація
+              </h4>
+              <ul class="list pricing-list">
+                <li class="pricing-item">
+                  <span class="pricing-label" data-i18n="appointment.pricing.inperson.home.label">Очна консультація на дому (можлива лише в рамках великого Порто)</span>
+                  <span class="pricing-value" data-i18n="appointment.pricing.inperson.home.value">від 70 євро (залежить від вашої адреси, уточнюйте при записі точну вартість)</span>
+                </li>
+                <li class="pricing-item">
+                  <span class="pricing-label" data-i18n="appointment.pricing.inperson.clinic.label">Плановий очний прийом у клініці в Порто</span>
+                  <span class="pricing-value" data-i18n="appointment.pricing.inperson.clinic.value">незабаром, слідкуйте за оновленнями ☺</span>
+                </li>
+                <li class="pricing-item">
+                  <span class="pricing-label" data-i18n="appointment.pricing.inperson.urgent.label">Ургентний прийом у клініці Trofa de Saude Boa Nova</span>
+                  <span class="pricing-value" data-i18n="appointment.pricing.inperson.urgent.value">з Березня 2026 року</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Form -->
+      <section class="section appointment-section appointment-section-3">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title is-hidden" data-i18n="appointment.section3.title">Запис на прийом</h2>
+          </div>
+          <!-- Appointment Title -->
+          <div class="appointment-form-header">
+            <h2 class="appointment-form-title" data-i18n="appointment.page.title">
+              Запис на прийом
+            </h2>
+          </div>
+
+          <!-- Appointment Form -->
+          <div class="appointment-form-wrapper">
+            <form class="appointment-form" id="appointmentForm">
+              <div class="form-group floating-label">
+                <label for="fullname" class="form-label" data-i18n="appointment.form.fullname">ПІБ</label>
+                <div class="form-input-group">
+                  <input 
+                    type="text" 
+                    id="fullname" 
+                    name="fullname" 
+                    required 
+                    aria-label="ПІБ"
+                    data-i18n-label="appointment.form.fullname"
+                    placeholder="Квітка Оксана Юріївна"
+                    class="form-input"
+                  />
+                  <svg class="form-icon" aria-hidden="true" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                </div>
+                <span class="form-error" id="fullname-error" role="alert"></span>
+              </div>
+              <div class="form-group floating-label">
+                <label for="phone" class="form-label" data-i18n="appointment.form.phone">Номер телефону, на якому є месенджери (Скайп, VIBER, WhatsApp, Telegram)</label>
+                <div class="form-input-group">
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    required 
+                    aria-label="Номер телефону, на якому є месенджери (Скайп, VIBER, WhatsApp, Telegram)"
+                    data-i18n-label="appointment.form.phone"
+                    placeholder="050-111-11-11"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}|[0-9]{10}|[+]?[0-9\s\-\(\)]{10,}"
+                    class="form-input"
+                  />
+                  <svg class="form-icon" aria-hidden="true" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <span class="form-error" id="phone-error" role="alert"></span>
+              </div>
+              <div class="form-group floating-label">
+                <label for="email" class="form-label" data-i18n="appointment.form.email">E-mail</label>
+                <div class="form-input-group">
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    aria-label="E-mail"
+                    data-i18n-label="appointment.form.email"
+                    placeholder="kvitka@gmail.com"
+                    class="form-input"
+                  />
+                  <svg class="form-icon" aria-hidden="true" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <span class="form-error" id="email-error" role="alert"></span>
+              </div>
+              <div class="form-group floating-label">
+                <label for="contact-method" class="form-label" data-i18n="appointment.form.contactMethod">Яким способом вам зручно, щоб ми з вами зв'язалися?</label>
+                <div class="form-input-group">
+                  <input 
+                    type="text" 
+                    id="contact-method" 
+                    name="contact-method" 
+                    aria-label="Яким способом вам зручно, щоб ми з вами зв'язалися?"
+                    data-i18n-label="appointment.form.contactMethod"
+                    data-i18n-placeholder="appointment.form.contactMethod"
+                    placeholder="Яким способом вам зручно, щоб ми з вами зв'язалися?"
+                    class="form-input"
+                  />
+                  <svg class="form-icon" aria-hidden="true" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-group floating-label">
+                <label for="message" class="form-label" data-i18n="appointment.form.message">Повідомлення</label>
+                <div class="form-input-group">
+                  <textarea 
+                    id="message" 
+                    name="message" 
+                    cols="5" 
+                    rows="5"
+                    aria-label="Повідомлення"
+                    data-i18n-label="appointment.form.message"
+                    data-i18n-placeholder="appointment.form.message"
+                    placeholder="Повідомлення"
+                    class="form-input"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="terms" name="terms" required />
+                  <span data-i18n="appointment.form.terms">Підтверджую, що мною прочитані умови надання консультацій</span>
+                </label>
+              </div>
+              <button
+                type="submit"
+                id="submitBtn"
+                class="btn btn-primary"
+                data-i18n="appointment.form.submit"
+              >
+                Відправити
+              </button>
+            </form>
+          </div>
+          
+          <!-- Success Message -->
+          <div id="successMessage" class="success-message" role="alert" aria-live="polite">
+            <div class="success-message-content">
+              <svg class="success-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <p class="success-text" data-i18n="appointment.form.success">
+                Дякуємо! Ваш запит відправлено. Ми зв'яжемося з вами найближчим часом.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Notice -->
+      <section class="section appointment-section appointment-section-4">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title is-hidden" data-i18n="appointment.section4.title">Важлива інформація</h2>
+          </div>
+          <!-- Important Notice -->
+          <div class="appointment-notice appointment-notice-urgent">
+            <h3 class="section-subtitle notice-title notice-title-urgent" data-i18n="appointment.notice.urgent.title">
+              Важливо!
+            </h3>
+            <p class="notice-urgent-text" data-i18n="appointment.notice.urgent.text">
+              Якщо у вас ургентний стан – не витрачайте час і звертайтеся за невідкладною допомогою на урженцію приватної лікарні або за номером SNS
+            </p>
+          </div>
+          
+          <!-- General Notice -->
+          <div class="appointment-notice appointment-notice-general">
+            <h3 class="section-subtitle notice-title" data-i18n="appointment.notice.title">
+              Зверніть увагу
+            </h3>
+            <ul class="list notice-list">
+              <li class="list-item" data-i18n="appointment.notice.item1">
+                Онлайн консультація не замінює очний прийом лікаря і не призначена для надання екстреної медичної допомоги.
+              </li>
+              <li class="list-item" data-i18n="appointment.notice.item2">
+                Після онлайн консультації не видається лікувально-консультативний висновок.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section" id="contact">
+      <div class="container">
+        <div class="footer-contacts-wrapper">
+          <div class="footer-contacts">
+            <h3 class="footer-title" data-i18n="footer.contact">Контакти</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="tel:+380502771244" data-i18n="footer.phone.value" class="footer-link">+38 (050) 277 12 44</a>
+              </li>
+              <li>
+                <a href="mailto:allergo.online@gmail.com" data-i18n="footer.email.value" class="footer-link">allergo.online@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h3 class="footer-title" data-i18n="footer.legal">Юридична інформація</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="privacy-policy.html" data-i18n="footer.privacy" class="footer-link">Політика конфіденційності</a>
+              </li>
+              <li>
+                <a href="terms-of-use.html" data-i18n="footer.terms" class="footer-link">Умови використання</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h3 class="footer-title" data-i18n="footer.social">Соціальні мережі</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="https://www.facebook.com/people/Vladyslava-Barzylovych/100001865270077/" class="footer-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/vladabarz?igsh=MWNrMmduNjk4bXRjag%3D%3D&utm_source=qr" class="footer-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-copyright" data-i18n="footer.copyright">
+          © 2025 Dra. Vlada Barzylovych. Всі права захищені.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+      <svg
+        xmlns="https://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="translations.js?v=5" defer></script>
+    <script src="script.js?v=8" defer></script>
+  </body>
+</html>
+

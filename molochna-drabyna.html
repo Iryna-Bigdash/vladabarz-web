@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Українська молочна драбина - інформація про введення молочних продуктів для дітей з алергією на білок коров'ячого молока"
+    />
+    <title>Українська молочна драбина | Dra. Vlada Barzylovych</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/">
+              <img src="assets/images/logo.svg" alt="Dra. Vlada Barzylovych" class="logo-img" width="200" height="50">
+            </a>
+          </div>
+          <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li>
+                <a href="index.html#about" class="nav-link" data-i18n="nav.about"
+                  >Про мене</a
+                >
+              </li>
+              <li>
+                <a href="molochna-drabyna.html" class="nav-link" data-i18n="nav.services"
+                  >Молочна драбина</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link appointment-modal-trigger"
+                  data-i18n="nav.appointment"
+                  >Запис на прийом</a
+                >
+              </li>
+              <li>
+                <a href="index.html#contact" class="nav-link" data-i18n="nav.contact"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+          </div>
+          <button id="burgerMenu" class="burger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section molochna-drabyna-about">
+        <div class="container">
+            <h2 class="section-title">Українська молочна драбина</h2>
+          <div class="molochna-description">
+            <p class="molochna-description-text">
+              Білки коров'ячого молока (БКМ) є одними з найбільш поширених алергенів дитячого віку. 
+              Незважаючи на розповсюджену думку, що більшість дітей «переростають» її до 3-х років, 
+              сучасні дослідження демонструють, що близько половини пацієнтів мають симптоми алергії 
+              навіть у підлітковому віці.
+            </p>
+            <p>
+              «Молочні драбини» – це схеми поступового введення БКМ в раціон дітей, що мали прояви 
+              алергії, починаючи з маленької кількості БКМ і інтенсивної термічної обробки з поступовим 
+              переходом до більшої кількості БКМ і меншої термічної обробки. Вони широко використовуються 
+              в світі з 2013 року.
+            </p>
+          </div>
+          <div class="about-content">
+            <div class="madia-wrapper">
+              <picture id="molochnaDrabynaClickable" class="molochna-clickable-image">
+                <!-- WebP format for modern browsers -->
+                <source 
+                  type="image/webp"
+                  srcset="
+                    assets/images/molochna-drabyna/800x450.webp 800w,
+                    assets/images/molochna-drabyna/1200x675.webp 1200w,
+                    assets/images/molochna-drabyna/1600x900.webp 1600w,
+                    assets/images/molochna-drabyna/2400x1350_1.webp 2400w
+                  "
+                  sizes="(max-width: 768px) 100vw, 
+                         (max-width: 1200px) 90vw, 
+                         1200px"
+                />
+                <!-- JPEG fallback for older browsers -->
+                <source 
+                  type="image/jpeg"
+                  srcset="
+                    assets/images/molochna-drabyna/800x450.jpg 800w,
+                    assets/images/molochna-drabyna/1200x675.jpg 1200w,
+                    assets/images/molochna-drabyna/1600x900.jpg 1600w,
+                    assets/images/molochna-drabyna/2400x1350.jpg 2400w
+                  "
+                  sizes="(max-width: 768px) 100vw, 
+                         (max-width: 1200px) 90vw, 
+                         1200px"
+                />
+                <img
+                  id="molochnaDrabynaImg"
+                  src="assets/images/molochna-drabyna/1200x675.webp"
+                  alt="Українська молочна драбина - натисніть для завантаження"
+                  loading="eager"
+                  decoding="async"
+                  width="1200"
+                  height="675"
+                />
+                <div class="molochna-image-overlay" data-i18n="molochna.clickToDownload">
+                  Натисніть для завантаження
+                </div>
+              </picture>
+            </div>
+            <div class="about-text">
+              <p>
+                На жаль, молочні драбини в класичному варіанті Великої Британії і Канади мають обмежене 
+                використання в Україні через особливості харчових звичок. Тому основним завданням нашої 
+                команди було адаптувати молочну драбину, зважаючи на особливості національної української 
+                кухні.
+              </p>
+              <p class="copyright-note" data-i18n="molochna.recipesNote">
+                <small>
+                  *Ви можете використовувати зображення в гарній якості з некомерційною метою за умови 
+                  обов'язкового зазначення авторських прав: к.м.н Барзилович В.Д., д.м.н. Уманець Т.Р., 
+                  к.м.н.Барзилович А.Д.., Стельмах В.В, Гіленко Г.І.
+                </small>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="section recipes-section">
+          <div class="container">
+              <h2 class="recipes-title section-title" data-i18n="molochna.featuresTitle">Особливості використання Української молочної драбини</h2>
+            <div class="recipes-content">
+              <div class="recipes-text-wrapper">
+                <ul class="list recipes-list">
+                  <li class="list-item">Є два варіанти 1-3 кроків, один з яких дозволяє не змінюючи принципово рецепт, а поступово збільшуючи кількість кисломолочного сиру в рецепті видозмінити страву з кекса до творожної запіканки.</li>
+                  <li class="list-item">Драбина доповнена збіркою кулінарних рецептів, що відповідають кожному кроку драбини, з урахуванням особливостей національної Української кухні та рекомендаціям щодо низького вживання цукру у дітей та підлітків ESPGHAN 2018 року.</li>
+                </ul>
+              </div>
+              <div class="madia-wrapper">
+              <picture id="recipesImageClickable" class="recipes-clickable-image">
+                <!-- WebP format for modern browsers -->
+                <source 
+                  type="image/webp"
+                  srcset="
+                    assets/images/recipies/800x450.webp 800w,
+                    assets/images/recipies/1200x675_1.webp 1200w,
+                    assets/images/recipies/1600x900_1.webp 1600w,
+                    assets/images/recipies/2400x1350_2.webp 2400w
+                  "
+                  sizes="(max-width: 768px) 100vw, 
+                         (max-width: 1200px) 40vw, 
+                         500px"
+                />
+                <!-- JPEG fallback for older browsers -->
+                <source 
+                  type="image/jpeg"
+                  srcset="
+                    assets/images/recipies/800x450.jpg 800w,
+                    assets/images/recipies/1200x675.jpg 1200w,
+                    assets/images/recipies/1600x900.jpg 1600w,
+                    assets/images/recipies/2400x1350.jpg 2400w
+                  "
+                  sizes="(max-width: 768px) 100vw, 
+                         (max-width: 1200px) 40vw, 
+                         500px"
+                />
+                <img
+                  src="assets/images/recipies/1200x675_1.webp"
+                  alt="Рецепти Української молочної драбини - натисніть для завантаження PDF"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="675"
+                />
+                <div class="recipes-image-overlay" data-i18n="molochna.clickToDownload">
+                  Натисніть для завантаження
+                </div>
+              </picture>
+            </div>
+          </div>
+            
+            <div>
+            <ul class="list recipes-details-list">
+              <li class="list-item">Драбина складається з 5-ти «сходинок», починаючи з продуктів, що містять невелику кількість БКМ і мають інтенсивну термічну обробку (крок 1) з поступовим переходом до більшої кількості БКМ і меншої термічної обробки.</li>
+              <li class="list-item">Ми радимо використовувати молочну драбину вдома/в медичному закладі дітям, що мали прояви IgE-не опосередкованих реакцій на БКМ (за винятком FPIES і EoE) та легкі прояви IgE опосередкованих реакцій на БКМ після консультації з лікарем алергологом.</li>
+              <li class="list-item">Як і для опублікованих раніше молочних драбин, протипоказом до використання Української молочної драбини є наявність в анамнезі життєво небезпечних алергічних реакцій (анафілаксія) та недостатньо контрольована бронхіальна астма.</li>
+              <li class="list-item">Якщо при переході на наступну сходинку у дитини виникають легкі прояви АБКМ – ми радимо повернутися попередньої сходинки щонайменше на 1 місяць, перш ніж знову обережно намагатися просуватися по сходах.</li>
+              <li class="list-item">При гарній переносимості ми рекомендуємо вживати продукти кожної сходинки щодня протягом 1-3 місяців, перш ніж перейти на наступну сходинку.</li>
+              <li class="list-item">При виникненні гострих реакцій середнього/важкого ступеня тяжкості (набряк Квінке, анафілаксія) не слід продовжувати використовувати молочну драбину, важливо звернутися до лікаря алерголога з метою визначення подальшої тактики.</li>
+            </ul>
+        </div>
+          </div>
+        </section>
+        
+        <!-- Notice Section -->
+        <section class="section">
+          <div class="container">
+            <div class="appointment-notice">
+              <h3 class="section-subtitle notice-title">Важливо:</h3>
+              <ul class="list notice-list">
+                <li class="list-item">Батьки (опікуни) дітей з АБКМ що використовують молочну драбину, мають бути обізнані як розпізнавати та контролювати алергічні реакції.</li>
+                <li class="list-item">Ми рекомендуємо пацієнтам знаходитись під контролем лікаря-алерголога: мати планові консультації принаймні раз на 6 місяців та повідомляти про гострі реакції, якщо вони виникають.</li>
+              </ul>
+            </div>
+            
+            <div class="recipes-cta">
+              <p class="recipes-cta-text">
+                Для отримання детальної інформації та індивідуальної консультації
+              </p>
+              <a href="#" class="recipes-cta-button appointment-modal-trigger" data-i18n="appointment.cta">
+                Записатися на прийом
+              </a>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer class="footer section" id="contact">
+      <div class="container">
+        <div class="footer-contacts-wrapper">
+          <div class="footer-contacts">
+            <h3 class="footer-title" data-i18n="footer.contact">Контакти</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="tel:+380502771244" data-i18n="footer.phone.value" class="footer-link">+38 (050) 277 12 44</a>
+              </li>
+              <li>
+                <a href="mailto:allergo.online@gmail.com" data-i18n="footer.email.value" class="footer-link">allergo.online@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h3 class="footer-title" data-i18n="footer.legal">Юридична інформація</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="privacy-policy.html" data-i18n="footer.privacy" class="footer-link">Політика конфіденційності</a>
+              </li>
+              <li>
+                <a href="terms-of-use.html" data-i18n="footer.terms" class="footer-link">Умови використання</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h3 class="footer-title" data-i18n="footer.social">Соціальні мережі</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="https://www.facebook.com/people/Vladyslava-Barzylovych/100001865270077/" class="footer-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/vladabarz?igsh=MWNrMmduNjk4bXRjag%3D%3D&utm_source=qr" class="footer-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-copyright" data-i18n="footer.copyright">
+          © 2025 Dra. Vlada Barzylovych. Всі права захищені.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+      <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+    <!-- Appointment Location Modal -->
+    <div class="modal-overlay" id="appointmentModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Закрити">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h2 class="modal-title" data-i18n="modal.title">Для запису на прийом оберіть вашу локацію</h2>
+          <div class="modal-buttons">
+            <a href="appointment.html" class="modal-btn modal-btn-portugal" data-i18n="modal.portugal">
+              Я в Португалії чи в будь-якій іншій країні
+            </a>
+            <a href="appointment-ukraine.html" class="modal-btn modal-btn-ukraine" data-i18n="modal.ukraine">
+              Я в Україні
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="translations.js" defer></script>
+    <script src="translations.js?v=14" defer></script>
+    <script src="script.js?v=12" defer></script>
+  </body>
+</html>
+
