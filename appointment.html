@@ -41,8 +41,8 @@
               </li>
               <li>
                 <a
-                  href="appointment.html"
-                  class="nav-link"
+                  href="#"
+                  class="nav-link appointment-modal-trigger"
                   data-i18n="nav.appointment"
                   >Запис на прийом</a
                 >
@@ -179,8 +179,8 @@
                   <span class="pricing-value" data-i18n="appointment.pricing.online.followup.value">35 євро</span>
                 </li>
                 <li class="pricing-item">
-                  <span class="pricing-label" data-i18n="appointment.pricing.abroad.label">Для тих, хто за кордоном</span>
-                  <span class="pricing-value" data-i18n="appointment.pricing.abroad.value">Оплата в євро, доларах або гривнях (еквівалент 65 євро)</span>
+                  <span class="pricing-label" data-i18n="appointment.pricing.abroad.label">Для всіх хто за кордоном (в будь якій іншій країні ….)</span>
+                  <span class="pricing-value" data-i18n="appointment.pricing.abroad.value">Ціна на первинну і повторну консультацію така сама, може здійснюватися в євро, доларах чи гривні.</span>
                 </li>
               </ul>
             </div>
@@ -431,8 +431,32 @@
       </svg>
     </button>
 
+    <!-- Appointment Location Modal -->
+    <div class="modal-overlay" id="appointmentModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Закрити">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h2 class="modal-title" data-i18n="modal.title">Для запису на прийом оберіть вашу локацію</h2>
+          <div class="modal-buttons">
+            <a href="appointment.html" class="modal-btn modal-btn-portugal" data-i18n="modal.portugal">
+              Я в Португалії чи в будь-якій іншій країні
+            </a>
+            <a href="appointment-ukraine.html" class="modal-btn modal-btn-ukraine" data-i18n="modal.ukraine">
+              Я в Україні
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JavaScript -->
-    <script src="translations.js?v=8" defer></script>
+    <script src="translations.js?v=9" defer></script>
     <script src="script.js?v=8" defer></script>
   </body>
 </html>

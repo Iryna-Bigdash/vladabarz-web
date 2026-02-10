@@ -172,6 +172,13 @@ img  {
 .nav-link:hover::after,.nav-link:focus::after  {
   width:100%;
 }
+.nav-link.active  {
+  color:var(--accent3);
+  font-weight:600;
+}
+.nav-link.active::after  {
+  width:100%;
+}
 .header-actions  {
   display:flex; align-items:center; gap:1rem;
 }
@@ -313,6 +320,9 @@ img  {
 .nav-link:hover,.nav-link:focus  {
   background-color:var(--text-bg); padding-left:1.5rem; color:var(--accent2);
 }
+.nav-link.active  {
+  background-color:var(--text-bg); color:var(--accent3); font-weight:600;
+}
 @media screen and (min-width:1200px)   {
   .burger-menu  {
     display:none;
@@ -331,6 +341,9 @@ img  {
   }
   .nav-link:hover,.nav-link:focus  {
     padding-left:1rem;
+  }
+  .nav-link.active  {
+    color:var(--accent3); font-weight:600;
   }
 }
 @media screen and (max-width:479px)   {
@@ -585,6 +598,7 @@ img  {
   color:#016a72; text-decoration:underline; transition:var(--transition); font-weight:500;
 }
 .about-mom-note  {
+  margin-top: 1.5rem;
   padding:1rem; margin-bottom:1rem; background-color:rgba(2,141,150,0.08); border-left:3px solid var(--accent3); border-top:1px solid rgba(0,0,0,0.1); border-radius:4px; text-align:left; font-style:italic; color:var(--accent3); font-weight:500;
 }
 .about-cta  {
